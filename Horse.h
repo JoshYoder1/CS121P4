@@ -9,4 +9,4 @@ class horse{
 		void advance();
 		void printLane();
 		bool isWinner();
-}end class
+};// end class
