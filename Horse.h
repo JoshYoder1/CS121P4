@@ -1,3 +1,7 @@
+//horse.h
+#ifndef HORSE_H_EXISTS
+#define HORSE_H_EXISTS
+
 class horse{
 	public:
 		int position;
@@ -10,3 +14,5 @@ class horse{
 		void printLane();
 		bool isWinner();
 };// end class
+
+#endif

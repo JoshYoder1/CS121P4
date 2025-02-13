@@ -1,4 +1,4 @@
-#indef RACE_H_EXISTS
+#ifndef RACE_H_EXISTS
 #define RACE_H_EXISTS
 
 #include "Horse.h"
@@ -11,4 +11,6 @@ class{
 	private:
 		Race();
 		void run();
-}// end class
+};// end class
+
+#endif
