@@ -3,11 +3,11 @@
 
 #include "Horse.h"
 
-class{
+class Race{
 	public:
-		const 5 int numHorses;
-		const int tracklength;
-		Horse horses[];
+		const int numHorses = 5;
+		const int trackLength = 15;
+		horse horses[];
 	private:
 		Race();
 		void run();

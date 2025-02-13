@@ -2,13 +2,13 @@
 #ifndef HORSE_H_EXISTS
 #define HORSE_H_EXISTS
 
-class horse{
+class horse {
 	public:
 		int position;
 		int id;
 		int trackLength;
 	private:
-		Horse();
+		horse();
 		void init(int id, int trackLength);
 		void advance();
 		void printLane();

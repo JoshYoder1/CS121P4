@@ -3,13 +3,15 @@
 #include "Horse.h"
 #include "Race.h"
 
-Race::Race(){
-	int horses[] = {0,0,0,0,0};
+Race(){
+	numHorses = 5;
+	trackLength = 15;
+	int horses[] = {0,0,0,0,0}
 }// end race
 
 void run(){
 	bool keepGoing = true;
-	while (keepGoing){
+	while keepGoing{
 		
 	}// end while
 }// end run

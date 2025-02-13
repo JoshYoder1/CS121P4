@@ -3,7 +3,7 @@
 #include <iostream>
 #include "Horse.h"
 
-horse::Horse(){
+horse::horse(){
 	horse::position = 0;
 	horse::id = 0;
 	horse::trackLength = 0;
@@ -15,22 +15,23 @@ void horse::init(int id, int trackLength){
 }// end init
 
 void horse::advance(){
-	horse::position = horse::position + 1;
+	horse::position = position + 1;
 }// end advance
 
-void Horse::printLane(){
-	for(i = 0, i < horse::position, i ++){
+void horse::printLane(){
+	for(int i = 0; i < horse::position; i ++){
 		std::cout << (".");
 	}// end for
-	std::cout << Horse::id;
-	for(i = 0, i < horse::trackLength - horse::position, i++){
+	std::cout << horse::id;
+	for(int i = 0; i < horse::trackLength - horse::position; i++){
 		std::cout << (".");
 	}// end for
-	std:: << std::endl;	
+	std::cout << std::endl;	
 }// end printLane
 
-bool Horse::isWinner(){
-	if(horse::position == horsetrackLength){
+bool horse::isWinner(){
+	if(horse::position == horse::trackLength){
 		return true;
 	}// end if
+	return false;
 }// end isWinner
